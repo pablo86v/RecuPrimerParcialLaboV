@@ -20,12 +20,8 @@ public class AutoViewHolder extends RecyclerView.ViewHolder{
         tvModelo = itemView.findViewById(R.id.tvModelo);
         tvMarca = itemView.findViewById(R.id.tvMarca);
 
-        itemView.findViewById(R.id.itemCard).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Log.d(  "click","ok");
-            }
-        });
+
+        itemView.findViewById(R.id.itemCard).setOnClickListener(new AutoListener(this, this.mainActivity));
     }
 
 

@@ -28,11 +28,11 @@ public class AutoAdapter extends RecyclerView.Adapter<AutoViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull AutoViewHolder holder, int position) {
-        AutoModel auto = listaAutos.get(position);
+        AutoModel auto = this.listaAutos.get(position);
         holder.position = position;
         holder.auto = auto;
-        holder.tvModelo.setText(auto.getMake());
-        holder.tvMarca.setText(auto.getModel());
+        holder.tvModelo.setText(auto.getModel());
+        holder.tvMarca.setText(auto.getMake());
     }
 
     @Override

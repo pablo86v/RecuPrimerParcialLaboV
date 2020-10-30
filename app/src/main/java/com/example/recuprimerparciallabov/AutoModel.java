@@ -1,9 +1,8 @@
 package com.example.recuprimerparciallabov;
-
-
+import java.io.Serializable;
 import java.util.Objects;
 
-public class AutoModel {
+public class AutoModel implements Serializable {
     private int id;
     private String make;
     private String model;
